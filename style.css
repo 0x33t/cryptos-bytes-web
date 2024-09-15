@@ -1,0 +1,279 @@
+* {
+    box-sizing: border-box;
+}
+
+/* nav en horizontal usando flex */
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #333;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    flex-grow: 1;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #111;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* Título + Logo */ 
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+    font-size: xx-large;
+}
+
+.titulo img {
+    max-width: 250px;
+    height: auto;
+}
+
+.titulo h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.silkscreen-regular { /* Fuente que exporté de Google Fonts para el título de la web */
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+#destacados {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #f4f4f4;
+}
+
+#destacados div {
+    width: 33%;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.destacada-centro article{
+    min-height: 100%;
+}
+.destacada-izq{
+    /*  distribicion de elementos en una columna uniformemente (filas iguales) */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.destacada-izq article {
+    padding: 5px;
+    min-height: 45%;
+}
+
+.destacada-der {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+
+.destacada-der article {
+    margin: 1%;
+    padding: 1px;
+}
+
+#destacados h2 {
+    background-color: #e0e0e0;
+    border-radius: 8px 8px 0 0;
+    text-align: center;
+}
+
+#destacados article { 
+        border-radius: 8px;
+    border: 1px solid black;
+}
+#destacados article:hover {
+box-shadow: 4px 4px 0 0 grey;
+}
+
+/* NOTICIAS GENERALES (MAIN)*/
+#generales {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    color: black;
+    background-color: #f1f1f1;
+}
+
+h2.ocultar { /* Oculto el título en el front pero lo dejo en HTML */
+    display: none;
+}
+
+.columnas-main {
+    flex: 1;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #e0e0e0;
+    padding: 5px;
+    border-radius: 10px;
+    height: auto;
+}
+
+.columnas-main h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Estilos para las noticias de criptomonedas */
+.cripto-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cripto-news {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cripto-news img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.cripto-news h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.cripto-news p {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/* Estilos para las noticias tecnológicas y de ciberseguridad */
+.tecnologia-news, .ciber-news {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tecnologia-news img, .ciber-news img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.tecnologia-news h3, .ciber-news h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.tecnologia-news p, .ciber-news p {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+#generales article:hover {
+    box-shadow: 4px 4px 4px 4px grey;
+}
+
+/* FOOTER */
+footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    margin-top: 40px;
+    color: black;
+}
+
+.footer-contenedor { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contactos-nosotros {
+    width: 45%;
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.listas-none {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.redes {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.redes ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+#copyright { /* Sección Copyright */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: 13px;
+}
+
+.titulos-generales h3 {
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    margin: 5px 5px;
+}
+
+.fotos-tecnologia {
+    max-height: 160px;
+}
